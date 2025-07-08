@@ -1,35 +1,36 @@
 /* frontend/src/App.module.css */
 
-.container {
-  min-height: 100vh; /* Pelo menos a altura da tela */
-  background-color: #F5F3F8; /* Cor de fundo do Figma */
+/* ... suas classes existentes para .container, .title, .subtitle, .icon, .cardsGrid, .cardItem, .iconContainer, .cardIcon, .cardTitle, .cardDescription ... */
+
+/* Estilos para o Botão (agora no App.module.css) */
+.buttonsContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Centraliza horizontalmente */
-  justify-content: center; /* Centraliza verticalmente (se o conteúdo for menor que a tela) */
-  padding: 32px 0; /* py-8 do tailwind */
+  flex-wrap: wrap; /* Permite que os botões quebrem a linha em telas menores */
+  gap: 16px; /* Espaçamento entre os botões */
+  margin-top: 48px; /* Espaçamento acima dos botões */
+  justify-content: center; /* Centraliza os botões */
+  padding: 0 24px; /* Padding nas laterais */
 }
 
-.title {
-  font-size: 48px; /* text-5xl do tailwind */
-  font-weight: 600; /* semi-bold do tailwind */
-  color: #6A1B9A; /* Cor roxa do Figma */
-  margin-bottom: 16px; /* mb-4 do tailwind */
+.button {
+  padding: 12px 24px;
+  border-radius: 30px; /* Borda bem arredondada */
+  border: none;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Espaçamento entre ícone e texto */
+  transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
 }
 
-.subtitle {
-  font-size: 20px; /* text-xl do tailwind */
-  color: #4A4A4A; /* Cor cinza do Figma */
-  margin-bottom: 48px; /* mb-12 do tailwind */
+.button:hover {
+  opacity: 0.9; /* Pequena opacidade para efeito hover */
 }
 
-/* frontend/src/App.module.css */
-
-/* ... seu código existente ... */
-
-.icon {
-  display: inline-block; /* Para que o span funcione como um bloco mas na mesma linha */
-  margin-right: 10px; /* Espaçamento entre o ícone e o texto */
-  font-size: 0.8em; /* Ajusta o tamanho do emoji em relação ao texto principal */
-  /* Para mudar a cor do emoji, precisaríamos de uma imagem/SVG, o emoji padrão tem cor fixa */
+.buttonIcon {
+  font-size: 18px; /* Tamanho do ícone dentro do botão */
 }
