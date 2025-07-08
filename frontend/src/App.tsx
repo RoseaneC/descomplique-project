@@ -1,10 +1,12 @@
+import styles from './App.module.css';
+
 function App() {
   return (
-    <div>
-      <h1>
-        Descomplique!
+    <div className={styles.container}>
+      <h1 className={styles.title}>
+        <span className={styles.icon}>🧠</span> Descomplique!
       </h1>
-      <p>
+      <p className={styles.subtitle}>
         Explicando o mundo do nosso jeitinho.
       </p>
       {/* Espaço para os cards */}
